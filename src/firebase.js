@@ -2,13 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB896pvCZwGVU5RUIWBIVzUAtTllNAu0n8",
-  authDomain: "fir-auth-1132.firebaseapp.com",
-  projectId: "fir-auth-1132",
-  storageBucket: "fir-auth-1132.appspot.com",
-  messagingSenderId: "1029021654707",
-  appId: "1:1029021654707:web:14aa4dee98449061701ac6",
-  measurementId: "G-MFP6M081T7",apiKey: "AIzaSyDLT5VGNrm5_Ks9gs8YlBvvS9rKrKjD2sY",
+apiKey: "AIzaSyDLT5VGNrm5_Ks9gs8YlBvvS9rKrKjD2sY",
 
   authDomain: "climate-check-360.firebaseapp.com",
 
