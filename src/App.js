@@ -5,20 +5,24 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import CurrentLocation from "./currentLocation";
-import { auth } from "./firebase";
+import { auth } from "./firebase"; // Importing Firebase
+import { onAuthStateChanged } from "firebase/auth"; // Importing onAuthStateChanged
 import "./App.css";
 
 function App() {
   const [userName, setUserName] = useState("");
 
   useEffect(() => {
-    auth.onAuthStateChanged((user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUserName(user.displayName);
       } else {
         setUserName("");
       }
     });
+
+    // Cleanup subscription on unmount
+    return () => unsubscribe();
   }, []);
 
   return (
