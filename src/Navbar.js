@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,9 +18,9 @@ function Navbar() {
           {/* Navigation links on the right */}
           <div className="ml-auto flex items-center">
             <div>
-              <a href="/signup" className="text-white">Login</a>
+              <Link to="/login" className="text-white">Login</Link> {/* Updated link to use Link */}
             </div>
-            <a href="#" className="text-white">About</a>
+            <Link to="/about" className="text-white ml-4">About</Link> {/* Added About link */}
           </div>
         </div>
       </nav>
