@@ -37,4 +37,10 @@
       "last 1 safari version"
     ]
   }
+
+  "engines": {
+  "npm": "latest"
 }
+
+}
+
