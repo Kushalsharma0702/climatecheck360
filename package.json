@@ -20,9 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  "update:caniuse": "npx browserslist@latest --update-db"
-
+    "eject": "react-scripts eject",
+    "update:caniuse": "npx browserslist@latest --update-db"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,11 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
-
+  },
   "engines": {
-  "npm": "latest"
+    "npm": "latest"
+  }
 }
-
-}
-
