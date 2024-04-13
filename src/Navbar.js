@@ -14,15 +14,6 @@ function Navbar() {
               ClimateCheck360
             </span>
           </div>
-
-          {/* Navigation links on the right */}
-          <div className="ml-auto flex items-center">
-            <div>
-              <Link to="/login" className="text-white">Login</Link> {/* Updated link to use Link */}
-            </div>
-            <Link to="/about" className="text-white ml-4">About</Link> {/* Added About link */}
-          </div>
-        </div>
       </nav>
     </header>
   );
